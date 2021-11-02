@@ -38,7 +38,7 @@ class NewVisitorTest(unittest.TestCase):
         # 她按回车键后，页面更新了
         # 待办事项表格中显示"1. Buy peacock features"
         input_box.send_keys(Keys.ENTER)
-        time.sleep(1)
+        time.sleep(4)
 
         table = self.browser.find_element(by='id', value='id_list_table')
         rows = table.find_elements(by='tag name', value='tr')
